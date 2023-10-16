@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude a Causa</title>
+    <link rel="stylesheet" href="styleFormParticipantes.css">
+</head>
+
+<body>
+
+    <header class="titulo1">
+        <h1>Runners Ajude a causa</h1>
+    </header>
+    <div class="titulo2">
+        <h2>Formulário de Inscrição </h2>
+    </div>
+
+    <section class="divPai">
+        <form action=" http://localhost:3000/registrations" method="post">
+            <fieldset>
+                <div>
+                    <label for="nome">
+                        Nome:
+                    </label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div>
+                    <label for="idade">
+                        Idade
+                    </label>
+                    <input type="number" id="idade" name="idade">
+                </div>
+
+                <div>
+                    <label for="email">
+                        E-mail:
+                    </label>
+                    <input type="email" name="e-mail" id="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <label class="tam-camiseta" for="tamanho-camiseta">
+                    TAMANHO DA CAMISETA <br>
+                </label>
+                <div class="ls-custom-select">
+                    <select name="tamanho-camiseta" id="tamanho-camiseta">
+                        <option selected disabled value=""> selecione o tamanho</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XG">XG</option>
+                    </select>
+                </div>
+
+
+
+                <div class="percurso">
+
+                    <label> CATEGORIA </label> <br>
+                    <label for="categoria">Corrida 3KM</label>
+                    <input type="radio" name="categoria" id="3km" value="3km" checked><br>
+
+                    <label for="categoria">Corrida 4KM</label>
+                    <input type="radio" name="categoria" id="4km" value="4km"><br>
+
+                    <label for="categoria">Corrida 5KM</label>
+                    <input type="radio" name="categoria" id="5km" value="5km">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div>
+                    <label for="valor">
+                        Valor da doação:
+                    </label>
+                    <input type="number" name="valor" id="valor-doacao">
+                </div>
+
+                
+                     <input class="botao"
+                     type="submit" id="enviar">
+               
+
+             </fieldset>
+
+        </form>
+    </section> <!---pai-->
+
+</body>
+
+</html>
